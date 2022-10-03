@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+## News app
+This is a news app written entirely with Html,Css and Javascript. React library was used. The news app has some functionalies: dynamic routing, search functionality, responsive designs, reusable components, state management. e.t.c. All our news data was gotten from guardian news api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### clone this project
 
-## Available Scripts
 
-In the project directory, you can run:
+You can clone the project to your local computer.
 
-### `npm start`
+- In your preffered folder, open your terminal and type the command
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`` git clone https://github.com/Mykmicheals/gmailClone.git ``
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- After cloning the project unzip the folder
 
-### `npm test`
+- Navigate to the folder using
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`` cd gmail_clone ``
 
-### `npm run build`
+- Install all dependencies using
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`` npm install ``
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Before you run the project, SignUp to guardian news api and get your api Key. Click [here](https://bonobo.capi.gutools.co.uk/register/developer) to signup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- to run project on your localhost use the command
 
-### `npm run eject`
+`` npm start ``
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## The UI
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### HomePage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![homepage](https://user-images.githubusercontent.com/88559940/193654215-b222506e-bb18-4c18-9882-b82ae4732386.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### News Display Section
 
-## Learn More
+![newsCard](https://user-images.githubusercontent.com/88559940/193654337-def3f108-ac12-47ff-9281-87134733dad0.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Detail Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![detailPage](https://user-images.githubusercontent.com/88559940/193654414-b78a7694-676a-4f74-99e2-d4e47cc022cb.png)
 
-### Code Splitting
+### Responsive
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![responsive1](https://user-images.githubusercontent.com/88559940/193654543-d013a3df-afb2-49d3-8891-e694ab18117a.png)
+![responsive2](https://user-images.githubusercontent.com/88559940/193654772-e30657bc-8190-4730-8949-3a566b31f715.png)
 
-### Analyzing the Bundle Size
+### Project design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Each components are seperated into different building blocks
+- all the news data was gotten from guardian news api
+- Fetch api library was used to fetch news data from the guardian news api
 
-### Making a Progressive Web App
+![hooks](https://user-images.githubusercontent.com/88559940/193676763-04e9019b-942c-4f08-b766-b187dfab444b.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- In the image above, i made a re-usable hook named useNews to prevent uneccessary code repetition
 
-### Advanced Configuration
+### Reusable Card
+I made a re-usable card component, to have thesame card UI across the website. The resuable card recieved some props value. also helped in preventing code repetition
+![reusableCard](https://user-images.githubusercontent.com/88559940/193678774-cd02170d-89a8-4cd2-8f55-da3803ef3187.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React Router v5 is used for dynamic rendering of pages. I did'nt use the html anchor tag, because it makes our app reload, thereby refreshing all state
+![router](https://user-images.githubusercontent.com/88559940/193679664-44a31115-83a7-4638-be89-5532cbb3c805.png)
