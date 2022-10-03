@@ -22,7 +22,19 @@ You can clone the project to your local computer.
 
 - Before you run the project, SignUp to guardian news api and get your api Key. Click [here](https://bonobo.capi.gutools.co.uk/register/developer) to signup
 
+- After you've gotten your api key create a .env file at the root of your project
+
+![env](https://user-images.githubusercontent.com/88559940/193680862-145c6ea6-cf04-46f9-8e6b-4e34ed638539.png)
+ 
+ - paste your api_key in the .env file
+
+`` REACT_APP_Guardian_News_ApiKey=Your_Api_key ``
+
+- The name must start with REACT_APP
+
 - to run project on your localhost use the command
+
+- Don't forget to add the .env file to your gitignore to avoid pushing your api key to a public repo.
 
 `` npm start ``
 
@@ -60,4 +72,9 @@ I made a re-usable card component, to have thesame card UI across the website. T
 ![reusableCard](https://user-images.githubusercontent.com/88559940/193678774-cd02170d-89a8-4cd2-8f55-da3803ef3187.png)
 
 - React Router v5 is used for dynamic rendering of pages. I did'nt use the html anchor tag, because it makes our app reload, thereby refreshing all state
+
 ![router](https://user-images.githubusercontent.com/88559940/193679664-44a31115-83a7-4638-be89-5532cbb3c805.png)
+
+
+
+
